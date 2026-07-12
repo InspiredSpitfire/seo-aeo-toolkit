@@ -74,6 +74,6 @@ claude --plugin-dir /path/to/seo-aeo-toolkit
 
 **Get cited by AI:** `llms-txt` → `aeo-content-optimization` → `eeat-authority` → `ai-visibility` (measure after 4–8 weeks)
 
-## License
+## Credits
 
-All skills, agents, and commands in this toolkit are original work. Share, fork, and adapt freely.
+All skills, agents, and commands here were written independently, but the toolkit's coverage was partly inspired by the [SearchFit.ai](https://searchfit.ai) `searchfit-seo` plugin. No explicit license is granted; if you'd like to redistribute or adapt this toolkit, please reach out first.
