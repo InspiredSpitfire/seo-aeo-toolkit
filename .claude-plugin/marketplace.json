@@ -1,0 +1,13 @@
+{
+  "name": "seo-aeo-toolkit",
+  "owner": {
+    "name": "Amanda Woodin"
+  },
+  "plugins": [
+    {
+      "name": "seo-aeo-toolkit",
+      "source": "./",
+      "description": "Complete SEO + AEO toolkit: 21 skills covering keyword research through AI-citation optimization, plus audit agents and quick commands."
+    }
+  ]
+}
