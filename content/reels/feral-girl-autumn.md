@@ -33,7 +33,7 @@
 | 0:41 | Let AI do the boring crap. |
 | 0:44 | So your 3 good brain hours go to what matters. |
 | 0:46 | You're not broken. |
-| 0:48 | You're running an outdated system never built for you. |
+| 0:48 | You're running an outdated system never built for |
 | 0:51 | Neurodivergent, perimenopausal goblins on wrecking balls. |
 | 0:54 | Drop your feral girl autumn rule below. |
 | 0:57 | Follow me into feral girl autumn. 🤘 |
