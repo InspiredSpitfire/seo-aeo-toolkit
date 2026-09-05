@@ -3,7 +3,7 @@
 **Brand:** She Rebels 🤘
 **Format:** Faceless text-motion reel (rendered — see `feral-girl-autumn/src/`)
 **Goal:** Follower growth
-**Specs:** 1080×1920, 43.6 sec, 30fps, silent — add trend audio in-app
+**Specs:** 1080×1920, 53.4 sec, 30fps, silent — add trend audio in-app
 **Audio note:** find a sound with a beat drop at ~0:05 so it lands on FERAL GIRL AUTUMN
 
 ---
@@ -14,21 +14,26 @@
 |---|---|
 | 0:00 | **Doctor: it's perimenopause** (white) — appears alone, holds 1.5 sec |
 | 0:01.5 | **ADHD: good luck, b!tch** (neon yellow) — drops underneath |
-| 0:03 | Fugg hot girl summer. |
-| 0:05 | **IT'S FERAL GIRL AUTUMN** — hot pink, glow, screen flash, punch-in |
-| 0:08 | ADHD + perimenopause isn't "just a phase." |
-| 0:11 | My brain runs on caffeine, chaos, and fugg you. |
-| 0:13 | I remember being an overachieving, people-pleasing, fully functional adult. |
-| 0:16 | Just kidding. I don't remember. |
-| 0:19 | I don't remember walking into this room either. |
-| 0:21 | I cried at Costco. |
-| 0:24 | My hormones and dopamine went on vacation without me. Ash-holes. |
-| 0:27 | New rules: no more "just try harder." |
-| 0:29 | Uniform: sweatpants and an attitude problem. |
-| 0:32 | Say no like it's cardio. |
-| 0:34 | Let AI do the boring shit so your 3 good brain hours go somewhere that matters. |
-| 0:38 | You're not broken. You're running an outdated operating system. |
-| 0:41 | Follow me into feral girl autumn. 🤘 |
+| 0:03 | F#ck hot girl summer. |
+| 0:04.8 | **IT'S FERAL GIRL AUTUMN** — hot pink, glow, screen flash, punch-in |
+| 0:08 | I'm over 40 + ADHD + perimenopause. |
+| 0:10 | Nobody warned us these two would team up like a villain origin story. |
+| 0:13 | One takes your focus. |
+| 0:15 | The other takes whatever f#cks you had left. |
+| 0:18 | I remember being a fully functional adult. |
+| 0:20 | Just kidding. I don't remember. |
+| 0:22 | I don't remember walking into this room either. |
+| 0:24 | I cried at Costco. |
+| 0:27 | My hormones and dopamine went on vacation without me. Ash-holes. |
+| 0:29 | Unfiltered is our new default mode. |
+| 0:32 | Uniform: sweatpants and an attitude. Any attitude, anytime. |
+| 0:34 | Say no like it's cardio. |
+| 0:36 | Saying the quiet parts out loud is our social currency. |
+| 0:39 | Let AI do the boring crap so your 3 good brain hours go to what matters. |
+| 0:42 | You're not broken. |
+| 0:44 | You're running an outdated system never built for neurodivergent, perimenopausal goblins on wrecking balls. |
+| 0:48 | Drop your feral girl autumn rule below. |
+| 0:50 | Follow me into feral girl autumn. 🤘 |
 
 **Palette:** near-black `#0a0a0a` · hot pink `#ff2e88` · cyan `#78e2da` · neon yellow `#eaff3d`
 **Type:** Anton (display) / Inter 900 (hook)
@@ -74,14 +79,15 @@ She Rebels 🤘
 
 ## POSTING
 
-- **Sat 9/5, 11:00 AM CDT** — best slot in the next 24 hours
-- **Sat 9/5, 5:00 PM CDT** — backup
-- **Tue/Wed 6–9 PM CDT** — strongest overall if the post can wait
+Windows are America/Chicago. 11 AM Saturday has passed.
+
+- **Sat 9/5, 5:00 PM CDT** — the remaining Saturday window
+- **Sun 9/6, 12:00–3:00 PM CDT** — Sunday midday
+- **Sun 9/6, 6:00–9:00 PM CDT** — Sunday's strongest window
+- **Tue/Wed, 6:00–9:00 PM CDT** — strongest overall if the post can wait
 
 Sit in the comments for the first 30 minutes. Early comment velocity is most of the game,
-and the "drop your rule below" line is built to feed it.
-
----
+and the "drop your rule below" card and caption line are both built to feed it.
 
 ## FOLLOW-UP REEL
 
