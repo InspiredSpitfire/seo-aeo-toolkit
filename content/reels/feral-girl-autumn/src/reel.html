@@ -45,23 +45,28 @@ for (const [n,b64] of Object.entries(window.FONTS)) {
 
 const S = [
  {a:0.0 ,b:3.0 ,type:'hook'},
- {a:3.0 ,b:5.0 ,fs:165,L:['<span class="pink">Fugg</span>','hot girl','summer.']},
- {a:5.0 ,b:8.3 ,type:'drop'},
- {a:8.3 ,b:10.6,fs:112,L:['ADHD + perimenopause','isn’t <span class="cy">&ldquo;just a phase.&rdquo;</span>']},
- {a:10.6,b:13.4,fs:122,L:['My brain runs on','<span class="pink">caffeine, chaos,</span>','and <span class="yl">fugg you.</span>']},
- {a:13.4,b:16.3,fs:108,L:['I remember being an','overachieving,','people-pleasing,','fully functional adult.']},
- {a:16.3,b:18.6,fs:145,L:['Just kidding.','<span class="pink">I don’t remember.</span>']},
- {a:18.6,b:21.4,fs:132,L:['I don’t remember','walking into','this room either.']},
- {a:21.4,b:23.6,fs:180,L:['I cried at','<span class="cy">Costco.</span>']},
- {a:23.6,b:26.6,fs:104,L:['My hormones and dopamine','went on vacation without me.','<span class="pink">Ash-holes.</span>']},
- {a:26.6,b:29.4,fs:132,L:['<span class="cy">New rules:</span>','no more','&ldquo;just try harder.&rdquo;']},
- {a:29.4,b:31.6,fs:124,L:['Uniform: sweatpants','and an','<span class="pink">attitude problem.</span>']},
- {a:31.6,b:33.6,fs:155,L:['Say no','like it’s <span class="cy">cardio.</span>']},
- {a:33.6,b:37.6,fs:104,L:['Let AI do the boring shit','so your <span class="yl">3 good brain hours</span>','go somewhere that matters.']},
- {a:37.6,b:40.6,fs:110,L:['You’re not broken.','You’re running an','<span class="pink">outdated operating system.</span>']},
- {a:40.6,b:43.6,fs:132,L:['Follow me into','<span class="pink">feral girl autumn.</span>','<span style="font-size:1.15em">🤘</span>']},
+ {a:3.0 ,b:4.8 ,fs:165,L:['<span class="pink">F#ck</span>','hot girl summer.']},
+ {a:4.8 ,b:8.0 ,type:'drop'},
+ {a:8.0 ,b:10.3,fs:120,L:['I’m over 40','+ ADHD','+ <span class="cy">perimenopause.</span>']},
+ {a:10.3,b:13.2,fs:106,L:['Nobody warned us','these two would team up','like a <span class="pink">villain origin story.</span>']},
+ {a:13.2,b:15.0,fs:140,L:['One takes','your focus.']},
+ {a:15.0,b:17.7,fs:120,L:['The other takes','whatever <span class="yl">f#cks you','had left.</span>']},
+ {a:17.7,b:19.9,fs:126,L:['I remember being','a fully functional adult.']},
+ {a:19.9,b:22.0,fs:150,L:['Just kidding.','<span class="pink">I don’t remember.</span>']},
+ {a:22.0,b:24.4,fs:132,L:['I don’t remember','walking into','this room either.']},
+ {a:24.4,b:26.5,fs:180,L:['I cried at','<span class="cy">Costco.</span>']},
+ {a:26.5,b:29.4,fs:106,L:['My hormones and dopamine','went on vacation without me.','<span class="pink">Ash-holes.</span>']},
+ {a:29.4,b:31.6,fs:132,L:['<span class="cy">Unfiltered</span>','is our new','default mode.']},
+ {a:31.6,b:34.3,fs:112,L:['Uniform: sweatpants','and an attitude.','<span class="pink">Any attitude, anytime.</span>']},
+ {a:34.3,b:36.3,fs:150,L:['Say no','like it’s <span class="cy">cardio.</span>']},
+ {a:36.3,b:39.0,fs:106,L:['Saying the quiet parts','out loud is our','<span class="yl">social currency.</span>']},
+ {a:39.0,b:42.3,fs:100,L:['Let AI do the boring crap','so your <span class="yl">3 good brain hours</span>','go to what matters.']},
+ {a:42.3,b:44.0,fs:160,L:['You’re not','broken.']},
+ {a:44.0,b:48.0,fs:88 ,L:['You’re running an outdated system','never built for neurodivergent,','<span class="pink">perimenopausal goblins</span>','<span class="pink">on wrecking balls.</span>']},
+ {a:48.0,b:50.4,fs:112,L:['Drop your','<span class="cy">feral girl autumn rule</span>','below.']},
+ {a:50.4,b:53.4,fs:132,L:['Follow me into','<span class="pink">feral girl autumn.</span>','<span style="font-size:1.15em">🤘</span>']},
 ];
-const DUR = 43.6, MAXW = 924, MAXH = 1180;
+const DUR = 53.4, MAXW = 924, MAXH = 1180;
 
 const wrap=document.getElementById('cards');
 const els = S.map(s=>{
@@ -109,7 +114,7 @@ window.render = function(t){
   GR.style.transform=`translate(${(f*67)%220-110}px,${(f*113)%220-110}px)`;
   const dp=S[2];
   FL.style.opacity = (t>=dp.a && t<dp.a+0.32) ? String(0.6*(1-(t-dp.a)/0.32)) : '0';
-  MK.style.opacity = t>6.4 ? String(0.5*ease((t-6.4)/1.2)) : '0';
+  MK.style.opacity = t>6.2 ? String(0.5*ease((t-6.2)/1.2)) : '0';
 
   els.forEach((el,i)=>{
     const s=S[i], IN=0.22, OUT=0.16;
