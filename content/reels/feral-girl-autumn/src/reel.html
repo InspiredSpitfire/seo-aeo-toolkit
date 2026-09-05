@@ -4,21 +4,23 @@
 html,body{margin:0;padding:0;background:#000;overflow:hidden}
 #stage{position:relative;width:1080px;height:1920px;background:#0a0a0a;overflow:hidden}
 .blob{position:absolute;border-radius:50%;filter:blur(130px);will-change:transform}
-#b1{width:940px;height:940px;background:#ff2e88;opacity:.60}
-#b2{width:860px;height:860px;background:#78e2da;opacity:.42}
-#b3{width:760px;height:760px;background:#b0179c;opacity:.55}
-#vig{position:absolute;inset:0;background:radial-gradient(ellipse 78% 66% at 50% 46%,rgba(0,0,0,0) 0%,rgba(0,0,0,.34) 60%,rgba(0,0,0,.86) 100%)}
+#b1{width:940px;height:940px;background:#ff2e88;opacity:.34}
+#b2{width:860px;height:860px;background:#78e2da;opacity:.26}
+#b3{width:760px;height:760px;background:#b0179c;opacity:.34}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse 78% 66% at 50% 46%,rgba(0,0,0,0) 0%,rgba(0,0,0,.46) 58%,rgba(0,0,0,.92) 100%)}
 #grain{position:absolute;inset:-200px;opacity:.14;mix-blend-mode:overlay;background-repeat:repeat}
 #scan{position:absolute;inset:0;opacity:.045;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.9) 0 1px,transparent 1px 4px)}
-#flash{position:absolute;inset:0;background:#ff2e88;opacity:0;mix-blend-mode:screen}
-.card{position:absolute;left:78px;right:78px;top:47%;text-align:center;opacity:0;will-change:transform,opacity}
+#flash{position:absolute;inset:0;background:#eaff3d;opacity:0;mix-blend-mode:screen}
+.card{position:absolute;left:60px;right:60px;top:47%;text-align:center;opacity:0;padding:70px 40px;
+  will-change:transform,opacity;
+  background:radial-gradient(ellipse 74% 62% at 50% 50%,rgba(4,4,6,.80) 0%,rgba(4,4,6,.66) 52%,rgba(4,4,6,0) 80%)}
 .ln{font-family:Anton,sans-serif;text-transform:uppercase;color:#fff;line-height:1.0;white-space:nowrap;
-  text-shadow:0 8px 44px rgba(0,0,0,.92),0 2px 6px rgba(0,0,0,.85)}
-.pink{color:#ff2e88;text-shadow:0 0 38px rgba(255,46,136,.8),0 8px 44px rgba(0,0,0,.85)}
-.cy{color:#78e2da;text-shadow:0 0 34px rgba(120,226,218,.65),0 8px 44px rgba(0,0,0,.85)}
-.yl{color:#eaff3d;text-shadow:0 0 36px rgba(234,255,61,.7),0 8px 44px rgba(0,0,0,.85)}
+  text-shadow:0 4px 0 rgba(0,0,0,.55),0 0 26px rgba(0,0,0,.95),0 0 60px rgba(0,0,0,.8)}
+.pink{color:#eaff3d;text-shadow:0 4px 0 rgba(0,0,0,.55),0 0 26px rgba(0,0,0,.95),0 0 60px rgba(0,0,0,.8)}
+.cy{color:#78e2da;text-shadow:0 4px 0 rgba(0,0,0,.55),0 0 26px rgba(0,0,0,.95),0 0 60px rgba(0,0,0,.8)}
+.yl{color:#eaff3d;text-shadow:0 4px 0 rgba(0,0,0,.55),0 0 26px rgba(0,0,0,.95),0 0 60px rgba(0,0,0,.8)}
 .hk{font-family:Inter,sans-serif;font-weight:900;letter-spacing:-.025em;line-height:1.04;white-space:nowrap;
-  text-shadow:0 8px 44px rgba(0,0,0,.95)}
+  text-shadow:0 4px 0 rgba(0,0,0,.55),0 0 26px rgba(0,0,0,.95),0 0 60px rgba(0,0,0,.8)}
 #mark{position:absolute;left:0;right:0;bottom:150px;text-align:center;font-family:Inter,sans-serif;
   font-weight:900;font-size:30px;letter-spacing:.30em;color:#78e2da;opacity:0;text-transform:uppercase}
 </style></head><body>
@@ -45,40 +47,43 @@ for (const [n,b64] of Object.entries(window.FONTS)) {
 
 const S = [
  {a:0.0 ,b:3.0 ,type:'hook'},
- {a:3.0 ,b:4.8 ,fs:165,L:['<span class="pink">F#ck</span>','hot girl summer.']},
- {a:4.8 ,b:8.0 ,type:'drop'},
- {a:8.0 ,b:10.3,fs:120,L:['I’m over 40','+ ADHD','+ <span class="cy">perimenopause.</span>']},
- {a:10.3,b:13.2,fs:106,L:['Nobody warned us','these two would team up','like a <span class="pink">villain origin story.</span>']},
- {a:13.2,b:15.0,fs:140,L:['One takes','your focus.']},
- {a:15.0,b:17.7,fs:120,L:['The other takes','whatever <span class="yl">f#cks you','had left.</span>']},
- {a:17.7,b:19.9,fs:126,L:['I remember being','a fully functional adult.']},
- {a:19.9,b:22.0,fs:150,L:['Just kidding.','<span class="pink">I don’t remember.</span>']},
- {a:22.0,b:24.4,fs:132,L:['I don’t remember','walking into','this room either.']},
- {a:24.4,b:26.5,fs:180,L:['I cried at','<span class="cy">Costco.</span>']},
- {a:26.5,b:29.4,fs:106,L:['My hormones and dopamine','went on vacation without me.','<span class="pink">Ash-holes.</span>']},
- {a:29.4,b:31.6,fs:132,L:['<span class="cy">Unfiltered</span>','is our new','default mode.']},
- {a:31.6,b:34.3,fs:112,L:['Uniform: sweatpants','and an attitude.','<span class="pink">Any attitude, anytime.</span>']},
- {a:34.3,b:36.3,fs:150,L:['Say no','like it’s <span class="cy">cardio.</span>']},
- {a:36.3,b:39.0,fs:106,L:['Saying the quiet parts','out loud is our','<span class="yl">social currency.</span>']},
- {a:39.0,b:42.3,fs:100,L:['Let AI do the boring crap','so your <span class="yl">3 good brain hours</span>','go to what matters.']},
- {a:42.3,b:44.0,fs:160,L:['You’re not','broken.']},
- {a:44.0,b:48.0,fs:88 ,L:['You’re running an outdated system','never built for neurodivergent,','<span class="pink">perimenopausal goblins</span>','<span class="pink">on wrecking balls.</span>']},
- {a:48.0,b:50.4,fs:112,L:['Drop your','<span class="cy">feral girl autumn rule</span>','below.']},
- {a:50.4,b:53.4,fs:132,L:['Follow me into','<span class="pink">feral girl autumn.</span>','<span style="font-size:1.15em">🤘</span>']},
+ {a:3.0 ,b:5.0 ,fs:170,L:['<span class="yl">F#ck</span>','hot girl summer.']},
+ {a:5.0 ,b:8.4 ,type:'drop'},
+ {a:8.4 ,b:11.0,fs:130,L:['I’m over 40','+ ADHD','+ <span class="cy">perimenopause.</span>']},
+ {a:11.0,b:13.8,fs:120,L:['Nobody warned us','these two would team up','like a <span class="yl">villain origin story.</span>']},
+ {a:13.8,b:15.8,fs:150,L:['One takes','your focus.']},
+ {a:15.8,b:18.4,fs:140,L:['The other takes','whatever <span class="yl">f#cks</span>','<span class="yl">you had left.</span>']},
+ {a:18.4,b:20.6,fs:135,L:['I remember being','a fully','functional adult.']},
+ {a:20.6,b:23.0,fs:150,L:['Just kidding.','<span class="yl">I can’t remember ship.</span>']},
+ {a:23.0,b:25.2,fs:185,L:['I cried at','<span class="cy">Costco.</span>']},
+ {a:25.2,b:27.8,fs:140,L:['My hormones','and dopamine','went on vacation.']},
+ {a:27.8,b:30.0,fs:170,L:['Without me.','<span class="yl">Ash-holes.</span>']},
+ {a:30.0,b:32.2,fs:150,L:['<span class="cy">Unfiltered</span>','is the new','default mode.']},
+ {a:32.2,b:34.8,fs:140,L:['Uniform: sweatpants','and an attitude.']},
+ {a:34.8,b:36.8,fs:150,L:['<span class="yl">Any attitude.</span>','<span class="yl">Anytime.</span>']},
+ {a:36.8,b:38.8,fs:160,L:['Say no','like it’s <span class="cy">cardio.</span>']},
+ {a:38.8,b:41.4,fs:130,L:['Saying the quiet parts','out loud is our','<span class="yl">social currency.</span>']},
+ {a:41.4,b:43.6,fs:150,L:['Let AI do','the boring crap.']},
+ {a:43.6,b:46.4,fs:130,L:['So your <span class="yl">3 good brain hours</span>','go to','what matters.']},
+ {a:46.4,b:48.4,fs:185,L:['You’re not','broken.']},
+ {a:48.4,b:51.0,fs:135,L:['You’re running','an outdated system','never built for you.']},
+ {a:51.0,b:54.4,fs:135,L:['Neurodivergent,','<span class="yl">perimenopausal goblins</span>','on wrecking balls.']},
+ {a:54.4,b:56.8,fs:140,L:['Drop your','<span class="cy">feral girl autumn rule</span>','below.']},
+ {a:56.8,b:59.8,fs:145,L:['Follow me into','<span class="yl">feral girl autumn.</span>','<span style="font-size:1.15em">🤘</span>']},
 ];
-const DUR = 53.4, MAXW = 924, MAXH = 1180;
+const DUR = 59.8, MAXW = 900, MAXH = 1120;
 
 const wrap=document.getElementById('cards');
 const els = S.map(s=>{
   const d=document.createElement('div'); d.className='card';
   if(s.type==='hook'){
-    d.innerHTML='<div class="hk" id="hk1" style="font-size:100px;color:#fff">Doctor: it’s perimenopause</div>'+
+    d.innerHTML='<div class="hk" id="hk1" style="font-size:104px;color:#ffffff">Doctor: it’s perimenopause</div>'+
                 '<div class="hk yl" id="hk2" style="font-size:118px;margin-top:44px">ADHD: good luck, b!tch</div>';
   } else if(s.type==='drop'){
-    d.innerHTML='<div class="ln cy" style="font-size:80px;letter-spacing:.18em;margin-bottom:30px">It’s</div>'+
-                '<div class="ln pink" id="dropTxt" style="font-size:190px;line-height:.92">Feral</div>'+
-                '<div class="ln pink dropL" style="font-size:190px;line-height:.92">Girl</div>'+
-                '<div class="ln pink dropL" style="font-size:190px;line-height:.92">Autumn</div>';
+    d.innerHTML='<div class="ln cy" style="font-size:82px;letter-spacing:.18em;margin-bottom:30px">It’s</div>'+
+                '<div class="ln yl" style="font-size:186px;line-height:.94">Feral</div>'+
+                '<div class="ln yl" style="font-size:186px;line-height:.94">Girl</div>'+
+                '<div class="ln yl" style="font-size:186px;line-height:.94">Autumn</div>';
   } else {
     d.innerHTML = s.L.map(l=>`<div class="ln" style="font-size:${s.fs}px">${l}</div>`).join('');
   }
@@ -113,7 +118,7 @@ window.render = function(t){
   const f=Math.floor(t*30);
   GR.style.transform=`translate(${(f*67)%220-110}px,${(f*113)%220-110}px)`;
   const dp=S[2];
-  FL.style.opacity = (t>=dp.a && t<dp.a+0.32) ? String(0.6*(1-(t-dp.a)/0.32)) : '0';
+  FL.style.opacity = (t>=dp.a && t<dp.a+0.32) ? String(0.34*(1-(t-dp.a)/0.32)) : '0';
   MK.style.opacity = t>6.2 ? String(0.5*ease((t-6.2)/1.2)) : '0';
 
   els.forEach((el,i)=>{
@@ -134,8 +139,7 @@ window.render = function(t){
       if(k<0.5) sc=0.60+0.46*ease(k/0.5);
       const sh=k<0.55?(1-k/0.55)*14:0;
       y += sh*Math.sin(k*58);
-      const g=`0 0 ${46+26*Math.sin(t*7)}px rgba(255,46,136,.95),0 0 140px rgba(255,46,136,.5)`;
-      el.querySelectorAll('.pink').forEach(n=>n.style.textShadow=g);
+      el.style.background=`radial-gradient(ellipse 78% 66% at 50% 50%,rgba(2,2,4,${0.90-0.05*Math.sin(t*7)}) 0%,rgba(2,2,4,.74) 52%,rgba(2,2,4,0) 80%)`;
     }
     el.style.opacity=String(o);
     el.style.transform=`translateY(calc(-50% + ${y}px)) scale(${sc})`;
