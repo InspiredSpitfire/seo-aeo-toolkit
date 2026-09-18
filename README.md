@@ -40,6 +40,7 @@ A complete search optimization plugin for Claude Code — traditional SEO **and*
 | `serp-performance` | Interpret Search Console data; diagnose drops, find wins |
 | `local-seo` | Google Business Profile, local pack, citations, reviews |
 | `video-seo` | YouTube optimization, video schema, transcript repurposing |
+| `short-form-video-ideation` | High-retention TikTok/Reels/Shorts concepts with hooks, scripts, and CTAs |
 | `site-migration` | Redirect maps and SEO-safe relaunches |
 | `content-translation` | Multilingual SEO and hreflang |
 
