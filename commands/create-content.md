@@ -1,19 +1,12 @@
 ---
 name: create-content
 description: Generate a complete SEO-optimized article — title, meta, structured headings, body, FAQ, internal links, and schema — ready to publish.
-arguments:
-  - name: topic
-    description: Topic or target keyword
-    required: true
-  - name: type
-    description: "Content type: blog, guide, listicle, comparison, how-to, glossary (default: blog)"
-    required: false
-  - name: words
-    description: "Approximate length (default: match what ranks for the query)"
-    required: false
+argument-hint: "[topic] [type: blog|guide|listicle|comparison|how-to|glossary] [words]"
 ---
 
-Write a publish-ready piece on "{{topic}}" ({{type}}, ~{{words}} words if specified).
+Write a publish-ready piece from this input: $ARGUMENTS
+
+Read the input as: the topic or target keyword (may be several words), optionally followed by a content type (blog, guide, listicle, comparison, how-to, glossary — default: blog) and an approximate word count (default: match what ranks for the query). If no topic was given, ask for one.
 
 Process: check the SERP for intent and format first; build a quick outline per the content-brief skill's structure; then write applying the aeo-content-optimization rules — answer-first sections, question-form H2s where they match real queries, self-contained passages, specific facts over vague claims.
 

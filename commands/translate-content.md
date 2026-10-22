@@ -1,16 +1,12 @@
 ---
 name: translate-content
 description: Translate and localize content for a target language/market with SEO intact — localized keywords, metadata, and hreflang.
-arguments:
-  - name: content
-    description: The content to translate (inline, URL, or file path)
-    required: true
-  - name: language
-    description: Target language and region (e.g. "German (Germany)", "pt-BR")
-    required: true
+argument-hint: "[content, URL, or file path] [target language/region]"
 ---
 
-Localize {{content}} for {{language}} using the content-translation skill.
+Localize content using the content-translation skill, from this input: $ARGUMENTS
+
+Read the input as: the content to translate (inline text, URL, or file path), followed by the target language and region as the last part of the input (e.g. "German (Germany)", "pt-BR"). If either is missing, ask for it.
 
 Deliver:
 

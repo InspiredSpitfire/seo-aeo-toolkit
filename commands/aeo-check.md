@@ -1,13 +1,12 @@
 ---
 name: aeo-check
 description: Quick AEO readiness check for a URL — can AI engines crawl it, extract answers from it, and trust it enough to cite it?
-arguments:
-  - name: url
-    description: The page or site URL to check
-    required: true
+argument-hint: "[url]"
 ---
 
-Run a fast answer-engine-optimization readiness check on {{url}}. This is the quick triage version — for deep work, route to the aeo-content-optimization, llms-txt, or eeat-authority skills.
+Run a fast answer-engine-optimization readiness check on: $ARGUMENTS
+
+If no URL was given, ask for one. This is the quick triage version — for deep work, route to the aeo-content-optimization, llms-txt, or eeat-authority skills.
 
 ## Checks
 

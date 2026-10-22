@@ -1,13 +1,12 @@
 ---
 name: create-topic
 description: Research one topic and produce a complete targeting plan — keyword mapping, intent, angle, and competitive positioning — before any content gets written.
-arguments:
-  - name: topic
-    description: The topic or keyword to research
-    required: true
+argument-hint: "[topic or keyword]"
 ---
 
-Build a targeting plan for "{{topic}}" using the keyword-research and keyword-clustering skills as needed.
+Build a targeting plan for this topic: $ARGUMENTS
+
+If no topic was given, ask for one. Use the keyword-research and keyword-clustering skills as needed.
 
 Deliver:
 

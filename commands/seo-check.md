@@ -1,13 +1,12 @@
 ---
 name: seo-check
 description: Quick SEO health check on a URL or file — the ten highest-impact checks in one fast pass.
-arguments:
-  - name: target
-    description: URL or file path to check
-    required: true
+argument-hint: "[url or file path]"
 ---
 
-Run a fast SEO triage on {{target}}. This is the quick version — route to the seo-audit skill for the full treatment.
+Run a fast SEO triage on: $ARGUMENTS
+
+If no URL or file path was given, ask for one. This is the quick version — route to the seo-audit skill for the full treatment.
 
 ## Checks
 
