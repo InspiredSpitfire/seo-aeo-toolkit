@@ -77,4 +77,4 @@ claude --plugin-dir /path/to/seo-aeo-toolkit
 
 ## Credits
 
-All skills, agents, and commands here were written independently, but the toolkit's coverage was partly inspired by the [SearchFit.ai](https://searchfit.ai) `searchfit-seo` plugin. No explicit license is granted; if you'd like to redistribute or adapt this toolkit, please reach out first.
+All skills, agents, and commands here were written independently, but the toolkit's coverage was partly inspired by the [SearchFit.ai](https://searchfit.ai) `searchfit-seo` plugin. Released under the MIT License (see `LICENSE`).
